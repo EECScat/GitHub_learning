@@ -1,0 +1,56 @@
+#Git command
+
+#########################
+#### environment setup
+#########################
+
+## install
+$ sudo apt-get install git
+
+## set user info
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+## unset
+$ git config --global --unset user.name EECScat
+## list configuration 
+$ git config --list 
+## check user.name
+$ git config user.name
+## help
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+
+#### some trick
+1. Use SSH key rather than HTTPS when clone or add a remote repo,or some errors may occur
+2. On windows platform the ssh key should be located in "C:\Users\<user_name>\.ssh, and the name of the ssh key should be "id_rsa","id_rsa.pub"
+
+
+#########################
+#### repository management
+#########################
+
+## add a repo
+$ git init
+## stage
+$ git add <filename>
+## commit
+$ git commit -m 'initial project version'
+## stage and commit
+$ git commit -a -m 'some info'
+## push
+$ git push origin master
+
+## check status at any process
+$ git status
+## delete a filename
+$ git rm <file_name>
+## check history
+$ git log 
+## check remote repo
+$git remote -v
+## add a remote repo
+$ git remote add <shortname> <url> 
+$ git clone [url]
+cat .gitignore
+
