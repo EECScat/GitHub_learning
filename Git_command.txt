@@ -34,10 +34,15 @@ $ man git-<verb>
 $ git init
 ## stage
 $ git add <filename>
+## withdraw stage
+$ git rm -r --cached .
 ## commit
 $ git commit -m 'initial project version'
 ## stage and commit
 $ git commit -a -m 'some info'
+
+## if remote has newer changes, pull into local repo
+$ git pull origin master
 ## push
 $ git push origin master
 
@@ -53,4 +58,6 @@ $git remote -v
 $ git remote add <shortname> <url> 
 $ git clone [url]
 cat .gitignore
+# generate a .gitignore file
+touch .gitignore
 
